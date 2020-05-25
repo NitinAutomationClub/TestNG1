@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing Google Apps]">
+  <listeners>
+    <listener class-name="analyzerapproach_2.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Run Time(failed)">
+    <classes>
+      <class name="analyzerapproach_2.RetryMyTest">
+        <methods>
+          <include name="TC2"/>
+          <include name="TC3"/>
+          <include name="TC1"/>
+        </methods>
+      </class> <!-- analyzerapproach_2.RetryMyTest -->
+    </classes>
+  </test> <!-- Run Time(failed) -->
+</suite> <!-- Failed suite [Testing Google Apps] -->
